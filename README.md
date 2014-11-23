@@ -1,4 +1,6 @@
 Chat-Multy-Server
 =================
 
-Tugas dari Pak Gede
+Tugas SAT
+
+Run Autentication.jar (java -jar Autentication.jar authentication_server.cfg)
