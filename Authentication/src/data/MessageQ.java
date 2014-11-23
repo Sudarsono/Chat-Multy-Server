@@ -1,9 +1,10 @@
 package data;
 
 
-import java.net.Socket;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import model.ClientServiceInterface;
 
 /**
@@ -28,7 +29,7 @@ public class MessageQ {
             try {
                 wait();
             } catch (InterruptedException ex) {
-                System.out.println("wait error " + ex.getMessage());
+                Logger.getLogger(MessageQ.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         notifyAll();
